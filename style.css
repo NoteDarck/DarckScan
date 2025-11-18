@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #e4e4e4;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.series-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.series-card {
+    background: #111;
+    border: 1px solid #222;
+    padding: 10px;
+    text-decoration: none;
+    color: #e4e4e4;
+    transition: 0.2s;
+}
+
+.series-card img {
+    width: 100%;
+    border: 1px solid #222;
+}
+
+.series-card:hover {
+    transform: scale(1.03);
+    border-color: #B6162B;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    opacity: 0.5;
+}
+
+/* Página de leitura */
+.capitulo-img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.nav-btns a {
+    background: #B6162B;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-btns a:hover {
+    background: #8e0f22;
+}
+/* HEADER ESTILO KUNMANGA */
+.header {
+    font-family: Arial, sans-serif;
+}
+
+/* PARTE DE CIMA */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #000000, #920101);
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.logo-icon {
+    background: #B6162B;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*texto da caixa do titulo*/
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+.drop-content {
+    display: none;
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 10px 0;
+    border-radius: 6px;
+    top: 22px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.drop-content a {
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: black;
+}
+.drop-btn:hover + .drop-content,
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+/* BOTÕES LADO DIREITO */
+.right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-btn {
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 2px solid #ccc;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    background: white;
+    font-weight: bold;
+}
+
+/* PARTE DE BAIXO DO MENU */
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: rgb(48, 45, 45);
+    padding: 14px;
+    border-bottom: 1px solid gb(48, 45, 45);
+}
+.header-bottom a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ac0f0f;
+    font-size: 14px;
+}
+.header-bottom a:hover {
+    color: #B6162B;
+}
